@@ -1,1 +1,1 @@
-input("NOmbre")
+input("Nombre")
