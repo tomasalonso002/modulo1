@@ -1,4 +1,4 @@
-input("Nombre")
-fecha=input("fecha")
-while fecha != None:
-    print(1+1)
+input("Nombre") 
+apellido = input("Apellido")
+if apellido != None:
+    print(apellido)
