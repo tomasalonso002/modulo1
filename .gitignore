@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Entornos virtuales
+venv/
+ENV/
+env/
+.venv/
+.env
+
+# Base de datos local (SQLite)
+db.sqlite3
+db.sqlite3-journal
+
+# Archivos multimedia y estáticos recolectados (opcional, según tu flujo de producción)
+media/
+staticfiles/
+
+# Variables de entorno y configuraciones sensibles
+.env
+*.env
+secret_key.py
+
+# Logs
+*.log
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores y IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
