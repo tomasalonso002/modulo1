@@ -1,16 +1,25 @@
-name: main-deploy
+name: Django CI
 
 on:
   push:
-    branches:[main]
+    branches:
+      - main
   pull_request:
-    branches:[main]
+    branches:
+      - main
 
 jobs:
-  test:
+  install:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install dependencies
-        run: pip install -r requierements.txt
-        
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run:  pip install -r requirements.txt
